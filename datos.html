@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Perfil Personal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4b79a1, #283e51);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: #1e88e5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, padding 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1565c0;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    section img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 5px 0;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .socials a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #1e88e5;
+    }
+
+    /* Colores por sección */
+    .personal-img { background-color: #ffe0b2; }
+    .datos { background-color: #e1bee7; }
+    .experiencia { background-color: #c8e6c9; }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RAMIRO MENDOZA</h1>
+  </header>
+
+  <nav>
+   <a href="index.html">Inicio</a>
+    <a href="datos.html">Datos</a>
+    <a href="imagenes.html">Imágenes</a>
+    <a href="videos.html">Videos</a>
+  </nav>
+
+  <main>
+    <section class="personal-img">
+      <h2>Imagen Personal</h2>
+      <img src="https://via.placeholder.com/200.png?text=Mi+Foto" alt="Foto personal">
+    </section>
+
+    <section class="datos">
+      <h2>Datos Personales</h2>
+      <ul>
+        <li><strong>Nombre:</strong> Juan Pérez</li>
+        <li><strong>Fecha de nacimiento:</strong> 11 de marzo de 1991</li>
+        <li><strong>Cédula de Identidad:</strong> 12345678</li>
+        <li><strong>Ocupación:</strong> Docente en Sistemas Informáticos</li>
+        <li><strong>Dirección:</strong> Av. Principal #123, Oruro - Bolivia</li>
+        <li><strong>Pasatiempo:</strong> Programación, lectura y robótica</li>
+      </ul>
+    </section>
+
+    <section class="experiencia">
+      <h2>Experiencia Laboral</h2>
+      <p>He trabajado más de 10 años en el área de informática educativa, desempeñando funciones como docente, desarrollador web y capacitador en nuevas tecnologías. Actualmente enseño en dos unidades educativas en Oruro.</p>
+      <ul>
+        <li><strong>2014 - 2020:</strong> Docente en la U.E. Técnico Humanístico Simón Bolívar</li>
+        <li><strong>2021 - Actualidad:</strong> Docente de Sistemas en U.E. Juan Pablo y U.E. Jesús María 2</li>
+        <li><strong>2022 - 2024:</strong> Asesor de proyectos de robótica escolar</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto:</p>
+    <p>📧 Correo: juanperez@email.com | 📞 Celular: +591 777-12345</p>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <p>© 2025 Juan Pérez. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

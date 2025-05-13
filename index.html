@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Página Mejorada</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4b79a1, #283e51);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: #1e88e5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, padding 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1565c0;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+    }
+
+    .video-container {
+      text-align: center;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .socials a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #1e88e5;
+    }
+
+    /* Secciones con colores diferentes */
+    .bienvenida { background-color: #ffe0b2; }
+    .biografia { background-color: #e1bee7; }
+    .mision { background-color: #c8e6c9; }
+    .vision { background-color: #b3e5fc; }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .video-container iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RAMIRO MENDOZA</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="datos.html">Datos</a>
+    <a href="imagenes.html">Imágenes</a>
+    <a href="videos.html">Videos</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Imagen de Presentación</h2>
+      <img src="https://via.placeholder.com/600x300.png?text=Imagen+Principal" alt="Imagen principal">
+    </section>
+
+    <section class="bienvenida">
+      <h2>Mensaje de Bienvenida</h2>
+      <p>¡Hola! Te doy la más cordial bienvenida a este espacio donde conocerás más sobre mí y mis ideales.</p>
+    </section>
+
+    <section class="biografia">
+      <h2>Biografía</h2>
+      <p>Mi nombre es Juan Pérez. Nací en Bolivia y desde joven me ha apasionado la tecnología y la educación. He dedicado mi vida a enseñar e inspirar a otros a alcanzar su máximo potencial.</p>
+    </section>
+
+    <section class="mision">
+      <h2>Misión</h2>
+      <p>Brindar conocimientos y herramientas tecnológicas a jóvenes para que puedan desarrollarse profesionalmente en un mundo digital.</p>
+    </section>
+
+    <section class="vision">
+      <h2>Visión</h2>
+      <p>Ser un referente en la enseñanza digital, creando una comunidad de aprendices motivados y capaces de transformar su entorno.</p>
+    </section>
+
+    <section class="video-container">
+      <h2>Video de Presentación</h2>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto:</p>
+    <p>📧 Correo: juanperez@email.com | 📞 Celular: +591 777-12345</p>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <p>© 2025 Juan Pérez. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
